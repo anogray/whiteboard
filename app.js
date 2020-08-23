@@ -18,6 +18,7 @@ io.on("connection", function (socket) {
     socket.on("mm", function (point) {
         socket.broadcast.emit("onmm", point);
     })
+    
 })
 
 app.use(express.static("client"));
