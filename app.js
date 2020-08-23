@@ -27,8 +27,8 @@ app.use(express.static("client"));
 // })
 
 //  connection
-//process.env.PORT||
-let port = 3000;
+
+let port = process.env.PORT||3000;
 httpServer.listen(port, function () {
     console.log("Server started at port 3000");
 })
